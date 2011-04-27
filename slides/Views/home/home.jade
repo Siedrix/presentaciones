@@ -1,0 +1,9 @@
+h1 Slides
+#nuexa-presentacion
+	a(href='/presentaciones/nueva') Crear una nueva
+- for(var i in presentaciones)
+	#presentacion
+		h4
+			a(href='/presentaciones/s/' + presentaciones[i].doc._id)
+				= presentaciones[i].doc.title
+

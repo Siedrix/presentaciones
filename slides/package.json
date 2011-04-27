@@ -1,0 +1,11 @@
+{
+  "name": "www",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "2.0.0",
+    "jade":"",
+    "stylus":"",
+    "mongoose":"",
+    "faye":""
+  }
+}

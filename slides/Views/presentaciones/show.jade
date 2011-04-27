@@ -1,0 +1,9 @@
+.slide
+	h1=  presentacion.doc.title
+	div= presentacion.doc.desc
+- for(var i in presentacion.doc.slides)
+	-if(presentacion.doc.slides[i].content)
+		.slide
+			h1= presentacion.doc.slides[i].title
+			div= presentacion.doc.slides[i].content
+#channel(channel=presentacion.doc._id)

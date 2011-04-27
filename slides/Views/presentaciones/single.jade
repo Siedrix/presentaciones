@@ -1,0 +1,23 @@
+.slide
+	h1= presentacion.doc.title
+	p= presentacion.doc.desc
+	p
+		a.focus(href=presentacion.doc._id + '/0' ) Focus
+	p
+		a(href='/presentaciones/show/' + presentacion.doc._id) Ver presentacion
+- for(var i in presentacion.doc.slides)
+	- if(presentacion.doc.slides[i].content)
+		.slide
+			h4= presentacion.doc.slides[i].title
+			div= presentacion.doc.slides[i].content
+			p
+				a.focus(href=presentacion.doc._id + '/' + (parseInt(i) + 1) ) Focus
+#addSlide
+	form(action='/presentaciones/addSlide/' + presentacion.doc._id, method='POST')
+		p
+			input(name="title")		
+		p
+			textarea(name="content")		
+		p
+			input(type="submit",value="agregar")
+
