@@ -1,0 +1,33 @@
+#presentation
+  -if(error)
+    p= error
+  h1 LogIn
+  form.inline(method="POST")(action="/login")
+    p
+      label Usuario 
+        input(type="text")(name="user")
+      label Password
+        input(type="password")(name="password")
+      input(type="submit")(value="Log In")
+#registro
+  h1 Registro
+  form.lined(method="POST")(action="/registro/create")
+    p
+      label Usuario
+      input(type="text")(name="user")
+    p
+      label Password
+      input(type="password")(name="password")
+    p
+      label Confirma tu Password
+      input(type="password")(name="confPassword") 
+    p
+      label Usuario de Twitter
+      input(type="text")(name="twitter") 
+    p
+      label Telefono
+      input(type="text")(name="telefono") 
+    p
+      input(type="submit")(value="Registrarme")
+     
+

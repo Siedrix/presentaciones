@@ -1,0 +1,40 @@
+*{padding:0;margin:0}
+body{font:14px helvetica,arial,sans-serif;color:#666}
+h1,h2,h3,h4,h5,h6{color:#000;text-shadow:1px 1px 1px #fff}
+a{text-decoration:none}
+p{margin:0 0 8px 0;}
+p b,p strong{text-shadow:1px 1px 1px #fff}
+p a{color:darkBlue}
+img{border:0}
+ul li{list-style:none outside none}
+#wrapper{width:1200px;margin:0 auto;padding:30px 15px 0 15px}
+#sidebar{width:400px;text-align:right;float:left;padding-right:20px;border-right:2px dotted darkGray;}
+#sidebar #logo{width:200px}
+#sidebar .filter-by{color:#7f7f7f;font-size:10px;margin-top:30px;text-transform:uppercase}
+#sidebar .group{margin-bottom:25px;}
+#sidebar .group .filter-type{font-size:20px;margin:10px 0 4px;color:#333}
+#sidebar .group ul li{border-bottom:1px solid #e0e0e0;font:11px/24px Arial;}
+#sidebar .group ul li a{color:#666}
+#sidebar .group ul li a:hover{color:darkBlue;font-weight:bold}
+#content{width:750px;float:right;}
+#content #nav{height:60px;width:100%;}
+#content #nav .current{background:#ddd;}
+#content #nav .current a{color:#000}
+#content #nav li{float:right;height:16px;padding:10px;}
+#content #nav li a{color:#fff}
+#content #nav li:hover{background:#ddd;border-bottom:5px solid darkBlue;}
+#content #nav li:hover a{color:#000}
+#log-in{text-align:right;}
+#log-in label{padding:0 10px}
+#event{position:relative;}
+#event .event-content{background:none repeat scroll 0 0 #eee;margin-bottom:15px;margin-right:240px;padding:10px 12px;text-align:justify;width:510px}
+#event .event-info{position:absolute;top:0;right:0;width:200px;}
+#event .event-info .placeholder{background:none repeat scroll 0 0 darkBlue;color:#fff;font-size:18px !important;font-weight:bold;margin:0 0 1px;padding:12px 0 10px 15px;text-shadow:1px 1px 1px #000}
+#event .event-info .date{position:relative;}
+#event .event-info .date .triangle{position:absolute;border-color:transparent darkBlue transparent transparent;border-style:solid;border-width:22px;height:0;width:0;top:0;left:-44px}
+form input[type=text]{color:#f00}
+form.inline{color:darkBlue;}
+form.inline label{color:darkBlue}
+form.lined{color:darkBlue;font-size:18;line-height:24px;}
+form.lined label{display:inline-block;font-size:17;margin-right:20px;width:175px}
+form.lined input{width:555px;padding:6px 10px;-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.5),0 1px 1px #fff}

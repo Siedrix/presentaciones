@@ -1,0 +1,26 @@
+html
+  head
+    title Hack.Org.Mx
+    link(rel='stylesheet', href='/main.css')
+    script(src="/js/faye-browser-min.js",type="text/javascript")
+  body
+    #wrapper
+      #sidebar
+        #title
+          h1 Local Talk
+        #mensajes
+          h4 Mensajes		
+      #content
+        #log-in
+          -if(user)
+            p
+              label= 'Bienvenido ' + user.user
+              label
+                a(href="/profile") Perfil
+              label
+                a(href="/logout") Log Out
+          -else
+            p 
+              a(href="/registro") Haz log in o Registrate
+        != body
+

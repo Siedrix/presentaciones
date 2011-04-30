@@ -1,0 +1,14 @@
+{
+  "name": "www",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "2.0.0",
+    "cradle": "",
+    "jade":"",
+	"connect-redis":"",
+    "stylus":"",
+    "joose":"",
+    "joosex-namespace-depended":"",
+    "hash":""
+  }
+}

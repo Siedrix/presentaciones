@@ -1,0 +1,148 @@
+bkcolor = #ddd
+bfcolor = #666
+hlg = #eee
+highlightColor = #000
+
+//Width variables
+wrapperWidth = 1200px
+sidebarWidth = 400px
+contentWidth = wrapperWidth - sidebarWidth - 50
+eventSidebarWidth = 200px
+eventContentWidth = contentWidth - eventSidebarWidth - 40px
+
+
+hred = darkBlue
+
+*
+  padding 0px
+  margin 0px
+body
+  font 14px helvetica, arial, sans-serif
+  color bfcolor
+h1, h2, h3, h4, h5, h6
+  color highlightColor
+  text-shadow 1px 1px 1px white
+a
+  text-decoration none 
+p
+  margin 0 0 8px 0
+  b, strong
+    text-shadow 1px 1px 1px white
+  a
+    color hred
+img
+  border 0
+ul
+  li
+    list-style none outside none
+#wrapper
+  width wrapperWidth
+  margin 0 auto
+  padding 30px 15px 0 15px
+#sidebar
+  width sidebarWidth
+  text-align right
+  float left
+  padding-right 20px
+  border-right 2px dotted darkGray
+  #logo
+    width 200px
+  .filter-by
+    color: #7F7F7F;
+    font-size: 10px;
+    margin-top: 30px;
+    text-transform: uppercase;    
+  .group
+    margin-bottom: 25px;
+    .filter-type
+      font-size: 20px;
+      margin: 10px 0 4px;    
+      color #333333
+    ul
+      li
+        border-bottom: 1px solid #E0E0E0;
+        font: 11px/24px Arial;
+        a
+          color bfcolor
+        a:hover
+          color hred
+          font-weight bold
+  
+#content
+  width contentWidth
+  float right
+  #nav
+    height 60px
+    width 100%
+    .current
+      background bkcolor
+      a
+        color black      
+    li
+      float right
+      height 16px
+      padding 10px
+      a
+        color white
+    li:hover
+      background bkcolor
+      border-bottom 5px solid hred
+      a
+        color black
+#log-in
+  text-align right
+  label 
+    padding 0 10px
+#event
+  position relative
+  .event-content
+    background none repeat scroll 0 0 hlg
+    margin-bottom 15px
+    margin-right eventSidebarWidth + 40
+    padding 10px 12px
+    text-align justify
+    width eventContentWidth
+  .event-info
+    position absolute
+    top 0
+    right 0
+    width eventSidebarWidth
+    .placeholder
+      background none repeat scroll 0 0 hred;
+      color #FFFFFF
+      font-size 18px !important
+      font-weight bold
+      margin 0 0 1px
+      padding 12px 0 10px 15px    
+      text-shadow 1px 1px 1px black
+    .date
+      position relative
+      .triangle
+        position absolute
+        border-color transparent hred transparent transparent
+        border-style solid
+        border-width 22px
+        height 0px
+        width 0px
+        top 0
+        left -44px
+form
+  input[type=text]
+    color red
+form.inline
+  color hred
+  label
+    color hred
+form.lined
+  color hred
+  font-size 18
+  line-height 24px
+  label
+    display inline-block
+    font-size 17
+    margin-right 20px
+    width 175px
+  input
+    width contentWidth - 195
+    padding 6px 10px
+    -moz-box-shadow inset 0 1px 2px rgba(0, 0, 0, 0.5), 0 1px 1px white
